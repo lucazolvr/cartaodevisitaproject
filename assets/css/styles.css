@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  /*Cores*/
+  --first-color: hsl(211, 55%, 40%);
+  --first-color-light: hsl(211, 30%, 48%);
+  --first-color-lighten: hsl(211, 40%, 62%);
+  --gradient-color: linear-gradient(
+    180deg,
+    hsl(213, 50%, 25%),
+    hsl(213, 50%, 15%)
+);
+--title-color: hsl(43, 85%, 55%);
+--text-color: hsl(0, 0%, 50%);
+--white-color: #fff;
+--body-color: hsl(0, 0%, 99%);
+
+  /*fonte e tipografia*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+}
+
+/* BASE*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+}
+
+.container {
+  height: 100vh;
+  margin-inline: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  position: relative;
+  width: 290px;
+  background: var(--gradient-color);
+  border-radius: 1rem;
+  padding: 2.5rem 1.5rem 3.5rem;
+  text-align: center;
+  box-shadow: 0 8px 32px hsla(178, 55%, 20% .15);
+}
+
+.img__card {
+    width: 90px
+}
+
+.card__border {
+   width: 124px;
+    height: 124px;
+    background-color: var(--first-color-light);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.card__perfil {
+    width: 104px;
+    height: 104px;
+    background-color: var(--first-color-lighten);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card__name, 
+.card__student {
+    color: var(--white-color)
+}
+
+.card__name{
+    font-size: var(--h2-font-size);
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.card__student{
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+}
